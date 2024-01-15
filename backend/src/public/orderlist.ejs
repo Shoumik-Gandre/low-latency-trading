@@ -1,0 +1,12 @@
+Asks:
+<ul>
+    <% asks.forEach(function(ask){ %>
+        <li>Price: <%= ask.price %> Quantity: <%= ask.quantity %> User: <%= ask.userId %></li>
+    <% }); %>
+</ul>
+Bids:
+<ul>
+    <% bids.forEach(function(bid){ %>
+        <li>Price: <%= bid.price %> Quantity: <%= bid.quantity %> User: <%= bid.userId %></li>
+    <% }); %>
+</ul>

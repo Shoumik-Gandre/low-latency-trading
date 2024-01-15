@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Orderlist page</h1>
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script>
+    var socket = io();
+
+    socket.on('update', function (msg) {
+      console.log(msg);
+    });
+
+    socket.on('orderlist', function (msg) {
+      console.log(msg);
+    });
+
+    socket.emit('orderlist')
+  </script>
+</body>
+
+</html>
