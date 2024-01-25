@@ -13,6 +13,7 @@ export interface Order {
     userId: string;
     price: number;
     quantity: number;
+    ticker: string
 }
 
 
@@ -21,4 +22,9 @@ export interface Depth {
         type: "bid" | "ask",
         quantity: number,
     }
+}
+
+export enum Side {
+    Bid = "BID",
+    Ask = "ASK"
 }

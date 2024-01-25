@@ -1,7 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import routes from './routes';
-// import ejs from 'ejs';
 import cors from 'cors';
 import { Server } from 'socket.io';
 import { createServer } from 'http';
