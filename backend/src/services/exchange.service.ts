@@ -25,6 +25,14 @@ export const exchangeBalance = (sellerUserId: string, buyerUserId: string, ticke
 
     user1.balances[ticker] -= quantity;
     user2.balances[ticker] += quantity;
+    console.log(`before | seller USD = ${user1.balances["USD"]}`);
+    console.log(`before | buyer USD = ${user2.balances["USD"]}`);
+    console.log(quantity);
+    console.log(price);
+    
     user1.balances["USD"] += (quantity * price);
     user2.balances["USD"] -= (quantity * price);
+
+    console.log(`before | seller USD = ${user1.balances["USD"]}`);
+    console.log(`before | buyer USD = ${user2.balances["USD"]}`);
 }

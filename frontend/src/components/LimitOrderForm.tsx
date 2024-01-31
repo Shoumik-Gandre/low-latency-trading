@@ -24,7 +24,8 @@ const LimitOrderForm = () => {
                 "userId": userId,
                 "side": side,
                 "price": Number(price),
-                "quantity": Number(quantity)
+                "quantity": Number(quantity),
+                "ticker": "GOOG"
             })
         }).then(value => console.log(value))
     }
